@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BMO Arcade</title>
+    <link rel="stylesheet" href="css/juego.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lacquer|Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Kalam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  </head>
+  <body id="body">
+    <div class="col-40">
+    
+      <div id="titulo">
+        <h1>ROMPECABEZAS DE PIKACHU</h1>
+      </div>
+      <div id="instrucciones">
+        <P>INSTRUCCIONES</P>
+        <ul id="lista-instrucciones">
+        </ul>
+      </div>
+      <div id="objetivo">
+        <p>OBJETIVO</p>
+        <img src="./images/finalPokemon.jpg" alt="final">
+        <div class="texto-centrado">
+          
+        </div>
+      </div>
+      <div id="ultimo-mov">
+        <div id="flecha" class="texto-centrado">
+          
+        </div>
+      </div>
+      
+    </div>
+    <div class="col-60">
+      <div id="juego">
+        <div class="piezasJuego">
+        <div id="pieza1"><img src="./images/1.jpg" alt="pieza 1"></div>
+        <div id="pieza2"><img src="./images/2.jpg" alt="pieza 2"></div>
+        <div id="pieza3"><img src="./images/3.jpg" alt="pieza 3"></div>
+        <div id="pieza4"><img src="./images/4.jpg" alt="pieza 4"></div>
+        <div id="pieza5"><img src="./images/5.jpg" alt="pieza 5"></div>
+        <div id="pieza6"><img src="./images/6.jpg" alt="pieza 6"></div>
+        <div id="pieza7"><img src="./images/7.jpg" alt="pieza 7"></div>
+        <div id="pieza8"><img src="./images/8.jpg" alt="pieza 8"></div>
+        <div id="pieza9"><img src="" alt=""></div>
+        </div>
+          <div>
+            <p id="movimientos-restantes" class="texto-centrado"></p>
+          </div>
+      </div>
+    </div>
+    <div class="animated bounceInLeft" id="cartelGanador">
+        <img src="/images/ganaste.gif" alt="ganaste">
+    </div>
+    <div class="animated bounceInLeft" id="cartelPerdedor">
+        <img src="/images/perdiste.gif" alt="perdiste">
+    </div>
+    <button class="boton animated bounceInLeft" id="aceptar" onclick=botonDeAceptar()> ACEPTAR! </button>    
+    <button class="boton animated bounceInLeft" id="intentar" onclick=botonDeAceptar()> INTENTAR DE NUEVO! </button>
+    <div id="footer">
+      
+    </div>
+    <script src="js/juego.js"></script>
+    
+    
+  </body>
+</html>
